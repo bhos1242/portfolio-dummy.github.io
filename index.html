@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vivek's Personal Portfolio Website
+    </title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/3b3c24a901.js" crossorigin="anonymous"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <h1><span>V</span>ivek</h1>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <ion-icon name="close-outline" onclick="closemenu()"></ion-icon>
+                </ul>
+                <ion-icon name="menu-outline" onclick="openmenu()"></ion-icon>
+            </nav>
+            <div class="hero">
+            <div class="header-text">
+                <p>Web Developer/Programmer</p>
+                <h1>Hi, I'm <span>Vivek</span><br> From Pune</h1>
+            </div>
+            <div class="vivek">
+                <img src="/vivek/[removal.ai]_tmp-63aeb0ea9f4a0.png" alt="" height="580" width="500">
+            </div>
+        </div>
+        </div>
+    </div>
+
+<!----------About Section ----------->
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/userVivek.jpg" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>What’s up, I’m Vivek. I’m a student living in Pune. I am a fan of technology, music, and entrepreneurship. I’m also interested in web development and programming. Currently I am pursuing my  Bachelors in Computer degree Application at Modern college Pune.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('Experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('Education')">Education</p>
+                    </div>
+                    <!-----------------Skills----- -->
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Frontend/Backend</span><br>Developing Web Pages</li>
+                            <li><span>Programming</span><br>C++ Program Developer</br></li>
+                            <li><span>Competitive coding</span><br>Data structure and Algorithms</br></li>
+                        </ul>
+                    </div>
+                    <!--------Experience ------- -->
+                    <div class="tab-contents" id="Experience">
+                        <ul>
+                            <li><span>Lazy Devs</span><br>Worked as Frontend Developer mainly focus on Tailwind Css</li>
+                            <li><span>Projects</span><br>
+                                <a href="#">E-commerce Website</a><br>
+                            <a href="#">Random Password Generator</a><br>
+                        <a href="#">Personal Book Store Website</a></br>
+                    <a href="#">Tesla Webpage Clone</a></li>
+                            <li><span>Competitive coding</span><br>Data structure and Algorithms</br></li>
+                        </ul>
+                    </div>
+                    <!------- Education -------->
+                    <div class="tab-contents" id="Education">
+                        <ul>
+                            <li><span>2021-24</span><br>Developing BCA from Modern college</li>
+                            <li><span>2022</span><br>Web Development Course</br></li>
+                            <li><span>2022</span><br>Data structure and Algorithms</br></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- -------Services-------- -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <ion-icon name="code-slash-outline"></ion-icon>
+                    <h2>Web Development</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio excepturi architecto suscipit a cupiditate dolores magnam quos facilis ab ipsum?</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <ion-icon name="crop-outline"></ion-icon>
+                    
+                    <h2>UI/UX Development</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio excepturi architecto suscipit a cupiditate dolores magnam quos facilis ab ipsum?</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <ion-icon name="logo-apple-appstore"></ion-icon>
+                    <h2>App Development</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio excepturi architecto suscipit a cupiditate dolores magnam quos facilis ab ipsum?</p>
+                    <a href="#">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ------Porfolio Section--------- -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work-1.png" alt="">
+                    <div class="layer">
+                        <h3>Social Media App</h3>
+                        <p>The app connects you to the talentted people around the world. Download it from play store.</p>
+                        <a href="#">
+                            <ion-icon name="link-outline"></ion-icon>
+                        </a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-2.png" alt="">
+                    <div class="layer">
+                        <h3>Music App</h3>
+                        <p>The app connects you to the talentted people around the world. Download it from play store.</p>
+                        <a href="#">
+                            <ion-icon name="link-outline"></ion-icon>
+                        </a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-3.png" alt="">
+                    <div class="layer">
+                        <h3>Online shopping App</h3>
+                        <p>The app connects you to the talentted people around the world. Download it from play store.</p>
+                        <a href="#">
+                            <ion-icon name="link-outline"></ion-icon>
+                        </a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="/apj/apj.jpg" alt="">
+                    <div class="layer">
+                        <h3>Basic Html Tribute Page</h3>
+                        <p>This is the basic Tribute Page to A.P.J Abdul Kalam.Using basic html and css</p>
+                        <a href="https://bhos1242.github.io/Project-1-Tribute-Website.github.io/">
+                            <ion-icon name="link-outline"></ion-icon>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+
+    <!-- -----------Contact---------- -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><ion-icon name="mail-outline"></ion-icon>bhosvivek123@gmail.com</p>
+                    <p><ion-icon name="call-outline"></ion-icon>9022738129</p>
+                    <div class="social-icons">
+                        <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+                        <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
+                        <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+                        <a href="#"><ion-icon name="logo-linkedin"></ion-icon></a>
+                    </div>
+                    <a href="images/Vivek resume web-development (1).pdf" target="_blank"  class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email">
+                        <textarea name="Message"  rows="10" placeholder="Your Message for me"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                      
+                    </form>
+                </div>
+            </div>
+        
+        </div>
+    </div>
+    <!-- --------copyright---------- -->
+    <div class="copyright">
+        <p>Copyright © Vivek Bhos || All rights reserved </p>
+    </div>
+    <script>
+        var tablinks=document.getElementsByClassName("tab-links");
+        var tabcontents=document.getElementsByClassName("tab-contents")
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab")
+        }
+    </script>
+
+    <!-- ------Script for side menu ---------->
+    <script>
+        var sidemeu=document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemeu.style.right ="0"
+        }
+        function closemenu(){
+            sidemeu.style.right ="-200px"
+        }
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbxCyDV-fXXNo4FKteYrtmzicHuBngIdd4tgQb22oWQ_ofT2mvZE-zz_DK1oHnKBoFIV4Q/exec'
+        const form = document.forms['submit-to-google-sheet']
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => console.log('Success!', response))
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+</body>
+</html>
